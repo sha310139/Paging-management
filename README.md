@@ -1,15 +1,49 @@
 # Paging-management
 實作Memory中的分頁法，包括FIFO(先進先出), LRU(最近罕用), ARB(附加參考位元), SC(二次機會), LFU(最不常使用), MFU(最常使用)。
 
+## 開發平台
+Win10
+<br>
+<br>
+
+## 使用開發環境
+Dev C++
+<br>
+<br>
+
+## 使用方式
+將input檔放至當前目錄<br>
+編譯OS_project3.cpp或OS_project3_v2.cpp後執行<br>
+輸入input檔名後<br>
+程式會產出結果於 input檔名_output.txt 檔案中<br>
+<br> 
+<br>
 
 ## input檔格式
 第一行為page Frame個數(範圍為1-10)<br>
 第二行為各個Page Reference的次序 (範圍為0-100)
- 
+<br> 
+<br>
 
 ## output檔格式
 顯示每種page Replacement 之 Page Fault 和 Page Replace的次數
+<br>
+<br>
 
+## v1及v2版本介紹
+
+v1實作FIFO, LRU, ARB, SC, LFU, MFU<br>
+
+v2中的LFU及MFU則有所更動<br>
+
+(1)在LFU的counter一樣時用FIFO判斷。<br>
+讀入input2.txt檔，output2(LFU+FIFO).txt<br>
+(2)在MFU的counter一樣時用LIFO判斷。<br>
+讀入input3.txt檔，output3(MFU+LIFO).txt<br>
+<br>
+<br>
+
+## 規則細節說明
 
 * Additional Reference Bits : <br>
 本規定10 Pages作一次shift，<br>
