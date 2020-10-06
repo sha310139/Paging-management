@@ -13,7 +13,14 @@ Dev C++
 
 ## 使用方式
 將input檔放至當前目錄<br>
-編譯OS_project3.cpp或OS_project3_v2.cpp後執行<br>
+編譯
+
+      OS_project3.cpp
+或
+
+      OS_project3_v2.cpp
+
+之後執行<br>
 輸入input檔名後<br>
 程式會產出結果於 input檔名_output.txt 檔案中<br>
 <br> 
